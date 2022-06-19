@@ -1,7 +1,7 @@
 - 👋 Hi, I’m *Alawiye Muritala Adeshina* (@emdes12)
 - 👀 I’m interested in coding/developing/designing
 - 🌱 I’m currently learning Javascript Libraries (React.js)
-- 📫 You can reach on WhatsApp @+2349059084617 or email: naijabayz@gmail.com 
+- 📫 You can reach me on WhatsApp @+2349059084617 or email: naijabayz@gmail.com 
 
 <!---
 emdes12/emdes12 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
