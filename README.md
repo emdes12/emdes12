@@ -9,9 +9,7 @@
 
 - 🔭 I’m currently working on **My portfolio**
 
-- 🌱 I’m currently learning **Vuejs**
-
-- 👯 I’m looking to collaborate on [Certificate Manager](https://github.com/emdes12/certificatemanager)
+- 🌱 I’m currently learning **Vuex**
 
 - 👨‍💻 All of my projects are available at [https://github.com/emdes12](https://github.com/emdes12)
 
