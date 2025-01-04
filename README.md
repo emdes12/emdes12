@@ -11,6 +11,8 @@
 
 - 🌱 I’m currently learning **Vuex**
 
+- 👨‍💻 I'm currently working on [https://relateplus.netlify.app](Relate+) a CRM software for Shinovate Solutions 
+
 - 👨‍💻 All of my projects are available at [https://github.com/emdes12](https://github.com/emdes12)
 
 - 💬 Ask me about **Vue, html, css and js**
