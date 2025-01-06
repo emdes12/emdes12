@@ -10,21 +10,29 @@
 }
 
 /* semantic color variables for this project */
-:root {
+:root[data-theme='light'] {
   --color-background: var(--vt-white);
   --logo-color: var(--vt-black);
-  --color-head-c: var(--vt-grey);
+  --color-head-c: var(--vt-grey-2);
   --theme-bg: var(--vt-grey-2);
 }
 
-@media (prefers-color-scheme: dark) {
+
+:root[data-theme='dark'] {
+  --color-background: var(--vt-black);
+  --logo-color: var(--vt-white);
+  --color-head-c: var(--vt-ash);
+  --theme-bg: var(--vt-yellow);
+}
+
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--vt-black);
     --logo-color: var(--vt-white);
     --color-head-c: var(--vt-ash);
     --theme-bg: var(--vt-yellow);
   }
-}
+} */
 
 a {
   text-decoration: none;

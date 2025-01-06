@@ -1,6 +1,12 @@
 @import "./base.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lily+Script+One&display=swap");
 
+body {
+  max-width: 1640px;
+  margin: 0 auto;
+  position: relative;
+}
+
 #container {
   max-width: 1380px;
   height: 100vh;
