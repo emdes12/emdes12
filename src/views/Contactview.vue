@@ -1,7 +1,7 @@
 <template>
-  <title>Alawiye's info</title>
+  <title>Alawiye's contact</title>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>This is an contact page</h1>
     <p>Still in progress....</p>
   </div>
 </template>
