@@ -7,7 +7,7 @@ import Arrow from "../assets/icons/arrow_icon.svg";
 <template>
   <img src="../assets/icons/homeshape.svg" alt="rect" class="right-bg" />
   <main>
-    <div>
+    <div class="herodiv">
       <h1>I'm <span>Alawiye Muritala</span></h1>
       <h2>Front end Developer</h2>
       <p>
@@ -18,7 +18,7 @@ import Arrow from "../assets/icons/arrow_icon.svg";
       </p>
       <Button txt="Hire Me" link="/contact" :icon="Arrow"/>
     </div>
-    <img src="../assets/images/me.png" alt="Alawiye-Muritala" class="me" />
+    <img src="../assets/images/me.png" alt="Alawiye-Muritala" class="herodiv me" />
   </main>
 </template>
 
@@ -29,6 +29,12 @@ import Arrow from "../assets/icons/arrow_icon.svg";
   bottom: 0%;
   right: 0%;
   z-index: -230;
+}
+
+.herodiv {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 300px;
 }
 
 h1 {
@@ -60,7 +66,7 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap-reverse;
   justify-content: space-between;
   gap: 30px;
 }
@@ -68,5 +74,18 @@ main {
 img.me {
   max-width: 500px;
   width: 80%;
+}
+
+@media (max-width: 920px) {
+  .right-bg {
+    display: none;
+  }
+
+  main {
+    align-items: flex-start;
+    height: fit-content;
+    justify-content: center;
+
+  }
 }
 </style>

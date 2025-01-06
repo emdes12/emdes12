@@ -32,7 +32,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 80px;
   transform: translate(-50%, -50%);
