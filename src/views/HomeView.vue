@@ -23,6 +23,9 @@ import Arrow from "../assets/icons/arrow_icon.svg";
 </template>
 
 <style scoped>
+template {
+  padding: 30px;
+}
 .right-bg {
   position: absolute;
   height: 100%;
