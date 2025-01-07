@@ -209,6 +209,10 @@ h3 {
   border-bottom: 1px solid var(--vt-grey);
 }
 
+img{
+  width: 100%;
+}
+
 span {
   font-family: Inter;
   font-size: 12px;
