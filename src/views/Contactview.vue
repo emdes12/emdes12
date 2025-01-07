@@ -100,7 +100,7 @@ main {
   width: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
   justify-content: space-between;
   gap: 30px;
 }
@@ -124,26 +124,6 @@ h1 {
   flex-direction: column;
   gap: 30px;
   flex: 1 1 300px;
-}
-
-h1 {
-  color: var(--vt-yellow);
-  margin-bottom: 10px;
-}
-
-h1 span {
-  position: relative;
-  font: inherit;
-}
-
-h1 span::before {
-  content: "";
-  width: 100%;
-  height: 5px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: -10;
 }
 
 form {
