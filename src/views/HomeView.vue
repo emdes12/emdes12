@@ -1,4 +1,3 @@
-sh1
 <script setup>
 import Button from "../components/Button.vue";
 import Arrow from "../assets/icons/arrow_icon.svg";
@@ -12,11 +11,10 @@ import Arrow from "../assets/icons/arrow_icon.svg";
       <h2>Front end Developer</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam
-        necessitatibus, corrupti illo commodi odio delectus ad pariatur. Ipsa
-        error fugiat veritatis sequi quam quia consequatur nostrum dolor. Nemo,
-        minima!
+        necessitatibus, corrupti illo commodi odio delectus ad pariatur. Ipsa error fugiat
+        veritatis sequi quam quia consequatur nostrum dolor. Nemo, minima!
       </p>
-      <Button txt="Hire Me" link="/contact" :icon="Arrow"/>
+      <Button txt="Hire Me" link="/contact" :icon="Arrow" />
     </div>
     <img src="../assets/images/me.png" alt="Alawiye-Muritala" class="herodiv me" />
   </main>
@@ -60,7 +58,8 @@ h1 span::before {
   z-index: -10;
 }
 
-h2, p {
+h2,
+p {
   margin-bottom: 30px;
 }
 
@@ -88,7 +87,6 @@ img.me {
     align-items: flex-start;
     height: fit-content;
     justify-content: center;
-
   }
 }
 </style>

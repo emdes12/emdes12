@@ -30,7 +30,7 @@
       </div>
 
       <div class="skills">
-        <h3>Funnel Designer/Builder</h3>
+        <h3>Funnel Designer & Builder</h3>
         <p>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores, quis
           at quaerat enim ad, doloribus maxime eos aliquam qui omnis voluptatibus
@@ -265,7 +265,7 @@ h1 {
 }
 
 h3 {
-  color: var(--theme-bg);
+  color: var(--vt-grey-2);
   overflow: hidden;
   padding-bottom: 15px;
   margin-bottom: 15px;

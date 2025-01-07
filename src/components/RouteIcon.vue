@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { useRoute } from "vue-router";
-import { onMounted } from 'vue';
+import { onMounted } from "vue";
 
 const props = defineProps({
   src1: {
@@ -10,7 +10,7 @@ const props = defineProps({
   },
   src2: {
     type: String,
-    required: true,
+    required: false,
   },
   link: {
     type: String,
@@ -18,9 +18,9 @@ const props = defineProps({
   },
   txt: {
     type: String,
-    required: true,
+    required: false,
   },
-})
+});
 
 const clsNm = ref("yes");
 const route = useRoute();
@@ -39,7 +39,7 @@ watch(
   () => route.path,
   () => {
     getPath();
-  },
+  }
 );
 
 // Run the logic on component load
@@ -47,9 +47,12 @@ getPath();
 </script>
 
 <template>
-  <RouterLink :to="link"> <div @click="getPath" :class="`circle ${clsNm}`">
-    <img :src="src1" class="src1"/><img :src="src2" class="src2"/> <p>{{ txt }}</p>
-  </div></RouterLink>
+  <RouterLink :to="link">
+    <div @click="getPath" :class="`circle ${clsNm}`">
+      <img :src="src1" class="src1" /><img :src="src2" class="src2" />
+      <p>{{ txt }}</p>
+    </div></RouterLink
+  >
 </template>
 
 <style scoped>
@@ -63,30 +66,38 @@ getPath();
   justify-content: center;
   font-size: 1rem;
   color: var(--vt-white);
+  width: fit-content;
 }
 
-.circle:hover, .circle.active{
-    background: var(--vt-yellow);
+img {
+  width: 30px;
+}
+
+.circle:hover,
+.circle.active {
+  background: var(--vt-yellow);
 }
 
 p {
-    display: none;
+  display: none;
 }
 
-.circle:hover p{
-    display: block;
+.circle:hover p {
+  display: block;
 }
 
 .src2 {
-    display: none;
+  display: none;
 }
 
-.circle:hover img.src2, .circle.active img.src2 {
-    display:block;
+.circle:hover img.src2,
+.circle.active img.src2 {
+  display: block;
 }
 
-.circle:hover img.src1, .circle.active img.src1 {
-    display: none;
+.circle:hover img.src1,
+.circle.active img.src1 {
+  display: none;
 }
 
 h3 {

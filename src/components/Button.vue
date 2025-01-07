@@ -1,21 +1,29 @@
 <script setup>
+import { useLink } from "vue-router";
+
 defineProps({
-  icon : {
+  icon: {
     type: String,
     require: true,
   },
-  txt : {
+  txt: {
     type: String,
     require: true,
-  }
-})
+  },
+  link: {
+    type: String,
+    require: false,
+  },
+});
 </script>
 
 <template>
   <RouterLink :to="link">
     <button>
       {{ txt }}
-      <img :src="icon" alt="btn-icon">
+      <div class="btnimg">
+        <img :src="icon" alt="btn-icon" />
+      </div>
       <span></span>
     </button>
   </RouterLink>
@@ -35,14 +43,22 @@ button {
   cursor: pointer;
 }
 
-img {
+.btnimg {
   background: var(--vt-yellow);
   border-radius: 50%;
   position: absolute;
   border: 1px solid var(--vt-yellow);
   right: 0;
   top: 0;
-  height: 100%;
+  width: 48.75px;
+  height: 48.75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 30px;
 }
 
 span {
