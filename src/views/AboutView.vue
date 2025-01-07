@@ -162,6 +162,7 @@ h4 {
   width: 230px;
   height: 230px;
   background-color: var(--vt-ash);
+  padding: 20px;
   border-radius: 50%;
   display: grid;
   place-items: center;
