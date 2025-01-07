@@ -23,6 +23,19 @@
   --logo-color: var(--vt-white);
   --color-head-c: var(--vt-ash);
   --theme-bg: var(--vt-yellow);
+
+  .im-circle, .tool-circle {
+    background-color: var(--vt-grey-2);
+  }
+  
+
+.img-th-light {
+  display: none;
+}
+
+.img-th-dark {
+  display: flex;
+}
 }
 
 /* @media (prefers-color-scheme: dark) {

@@ -42,10 +42,131 @@
         </p>
       </div>
     </div>
+
+    <div class="tools">
+      <h4>skills</h4>
+
+      <div class="tools-list">
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/html.svg" alt=""><img class="img-th-dark" src="../assets/icons/html2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/css.svg" alt=""><img class="img-th-dark" src="../assets/icons/css2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/js.svg" alt=""><img class="img-th-dark" src="../assets/icons/js2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/github.svg" alt=""><img class="img-th-dark" src="../assets/icons/github2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/firebase.svg" alt=""><img class="img-th-dark" src="../assets/icons/firebase2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/ts.svg" alt=""><img class="img-th-dark" src="../assets/icons/ts2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/tailwind.svg" alt=""><img class="img-th-dark" src="../assets/icons/tailwind2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/vue.svg" alt=""><img class="img-th-dark" src="../assets/icons/vue2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/node.svg" alt=""><img class="img-th-dark" src="../assets/icons/node2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/cdr.svg" alt=""><img class="img-th-dark" src="../assets/icons/cdr2.svg" alt=""></div>
+          </div>
+        </div>
+        
+        <div class="tool-circle">
+          <div class="level-circle">
+            <div class="im-circle"><img class="img-th-light" src="../assets/icons/seo.svg" alt=""><img class="img-th-dark" src="../assets/icons/seo2.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 </template>
 
 <style scoped>
+.tools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 30px;
+}
+
+h4 {
+  text-transform: uppercase;
+}
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.tool-circle {
+  background-color: var(--vt-ash);
+  border-radius: 50%;
+}
+
+.img-th-dark {
+  display: none;
+}
+
+.level-circle {
+  width: 260px;
+  height: 260px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: var(--vt-yellow);
+  clip-path: 0% 0%, 0% 100%, 100% 100%, 100% 50%, 50% 50%, 100% 100%;
+}
+
+.im-circle {
+  width: 230px;
+  height: 230px;
+  background-color: var(--vt-ash);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -82,10 +203,10 @@ h1 {
 
 h3 {
   color: var(--theme-bg);
-  height: 58px;
   overflow: hidden;
-  padding-bottom: 5px;
-  border-bottom: 1px solid ;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid var(--vt-grey);
 }
 
 span {
@@ -100,7 +221,6 @@ span {
 p {
   height: 100px;
   overflow: hidden;
-  color: #ccc;
   font-family: Inter;
   font-size: 14px;
   font-style: normal;
@@ -109,5 +229,9 @@ p {
 }
 
 @media (min-width: 1024px) {
+}
+
+@media (prefers-color-scheme: dark) {
+
 }
 </style>
