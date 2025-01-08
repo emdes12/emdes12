@@ -18,7 +18,9 @@ const projectData = data.data;
             <img :src="website.imageURL" alt="{{ website.name }} Image" />
             <h3>{{ website.name }}</h3>
             <p>{{ website.desc }}</p>
-            <p>Tech Stack: {{ website.stack }}</p>
+            <p>
+              Tech Stack: <b>{{ website.stack }}</b>
+            </p>
             <span>
               <a :href="website.link" target="_blank" rel="noopener noreferrer"
                 >Live Site</a
@@ -36,7 +38,9 @@ const projectData = data.data;
             <img :src="logo.imageURL" alt="{{ logo.name }} Logo" />
             <h3>{{ logo.name }}</h3>
             <p>{{ logo.desc }}</p>
-            <p>Designed with: {{ logo.stack }}</p>
+            <p>
+              Designed with: <b>{{ logo.stack }}</b>
+            </p>
             <span>
               <a :href="logo.link" target="_blank" rel="noopener noreferrer"
                 >View Full Image</a
@@ -51,7 +55,9 @@ const projectData = data.data;
             <img :src="flyer.imageURL" alt="{{ flyer.name }} Flyer" />
             <h3>{{ flyer.name }}</h3>
             <p>{{ flyer.desc }}</p>
-            <p>Designed with: {{ flyer.stack }}</p>
+            <p>
+              Designed with: <b>{{ flyer.stack }}</b>
+            </p>
             <span>
               <a :href="flyer.link" target="_blank" rel="noopener noreferrer"
                 >View Full Image</a
@@ -64,7 +70,17 @@ const projectData = data.data;
   </main>
 </template>
 
-<style>
+<style scoped>
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--vt-yellow);
+}
+
+h3 {
+  color: var(--vt-yellow);
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -97,12 +113,31 @@ h1 {
   flex-direction: column;
   gap: 30px;
   flex: 1 1 300px;
+  background-color: var(--vt-grey-2);
+  padding: 20px;
 }
 
 img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: top center;
 }
 
-@media (min-width: 1024px) {
+.herodiv p {
+  height: 65px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.herodiv span {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+@media (min-width: 850px) {
 }
 </style>
