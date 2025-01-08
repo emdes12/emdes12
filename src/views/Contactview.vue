@@ -37,7 +37,7 @@ import SendIcon from "../assets/icons/send.svg";
           </div>
         </div>
         <div class="social-icon">
-          <RouteIcon link="./facebook" :src1="FacebookIcon" :src2="FacebookIcon" />
+          <RouteIcon link="/facebook" :src1="FacebookIcon" :src2="FacebookIcon" />
           <RouteIcon link="/github" :src1="GithubIcon" :src2="GithubIcon" />
           <RouteIcon link="/linkedin" :src1="LinkedinIcon" :src2="LinkedinIcon" />
         </div>

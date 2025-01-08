@@ -35,6 +35,21 @@ const router = createRouter({
       name: 'blog',
       component: () => import('../views/BlogView.vue'),
     },
+    {
+      path: '/facebook',
+      name: 'facebook',
+      redirect: 'https://facebook.com/daemperor.d',
+    },
+    {
+      path: '/github',
+      name: 'github',
+      redirect: 'https://github.com/emdes12',
+    },
+    {
+      path: '/linkedin',
+      name: 'linkedin',
+      redirect: 'https://linkedin.com/in/alawiye-muritala',
+    },
   ],
 })
 
