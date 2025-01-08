@@ -31,7 +31,8 @@ import BlogIcon2 from "../assets/icons/blog_icon (2).svg";
 
 @media (max-width: 850px) {
   .menulist {
-    display: none;
+    /* display: none; */
+    width: 100%;
   }
 }
 </style>

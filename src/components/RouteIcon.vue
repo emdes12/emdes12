@@ -47,7 +47,7 @@ getPath();
 </script>
 
 <template>
-  <RouterLink :to="link">
+  <RouterLink class="r-circle" :to="link">
     <div @click="getPath" :class="`circle ${clsNm}`">
       <img :src="src1" class="src1" /><img :src="src2" class="src2" />
       <p>{{ txt }}</p>
@@ -100,19 +100,18 @@ p {
   display: none;
 }
 
-h3 {
-  font-size: 1.2rem;
-}
+@media (max-width: 850px) {
+  .circle {
+    width: 100%;
+    border-radius: 0;
+  }
 
-.greetings h1,
-.greetings h3 {
-  text-align: center;
-}
+  .circle p {
+    display: block;
+  }
 
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
+  .r-circle {
+    width: 100%;
   }
 }
 </style>

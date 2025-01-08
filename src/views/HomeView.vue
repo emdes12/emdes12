@@ -78,7 +78,7 @@ img.me {
   width: 80%;
 }
 
-@media (max-width: 920px) {
+@media (max-width: 980px) {
   .right-bg {
     display: none;
   }

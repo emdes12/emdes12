@@ -52,8 +52,28 @@ h3 {
 
 @media (min-width: 1024px) {
   #container {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     padding: 2rem;
+  }
+}
+
+@media (max-width: 850px) {
+  h1 {
+    font-size: 21px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+  
+  h3 {
+    font-size: 15px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  p, span {
+    font-size: 10px;
   }
 }
