@@ -52,7 +52,7 @@ import SendIcon from "../assets/icons/send.svg";
           <div class="btnimg">
             <img :src="SendIcon" alt="btn-icon" />
           </div>
-          <span></span>
+          <span class="btn-span"></span>
         </button>
       </form>
     </div>
@@ -193,7 +193,7 @@ img {
   width: 30px;
 }
 
-span {
+.btn-span {
   content: "";
   position: absolute;
   border: 1px solid var(--vt-yellow);
@@ -210,7 +210,7 @@ button:hover {
   color: var(--vt-white);
 }
 
-button:hover span {
+button:hover .btn-span {
   left: 0;
 }
 
