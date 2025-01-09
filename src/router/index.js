@@ -38,17 +38,23 @@ const router = createRouter({
     {
       path: '/facebook',
       name: 'facebook',
-      redirect: 'https://facebook.com/daemperor.d',
+      beforeEnter(to, from, next) {
+        window.location.replace('https://facebook.com/daemperor.d')
+      }
     },
     {
       path: '/github',
       name: 'github',
-      redirect: 'https://github.com/emdes12',
+      beforeEnter(to, from, next) {
+        window.location.replace('https://github.com/emdes12')
+      }
     },
     {
       path: '/linkedin',
       name: 'linkedin',
-      redirect: 'https://linkedin.com/in/alawiye-muritala',
+      beforeEnter(to, from, next) {
+        window.location.replace('https://linkedin.com/in/alawiye-muritala')
+      }
     },
   ],
 })
