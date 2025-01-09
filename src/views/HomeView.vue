@@ -10,9 +10,8 @@ import Arrow from "../assets/icons/arrow_icon.svg";
       <h1>I'm <span>Alawiye Muritala</span></h1>
       <h2>Front end Developer</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores veniam
-        necessitatibus, corrupti illo commodi odio delectus ad pariatur. Ipsa error fugiat
-        veritatis sequi quam quia consequatur nostrum dolor. Nemo, minima!
+        I'm passionate about crafting innovative web solutions and driving results for
+        businesses.
       </p>
       <Button txt="Hire Me" link="/contact" :icon="Arrow" />
     </div>
@@ -73,7 +72,7 @@ main {
   gap: 30px;
 }
 
-img.me {
+img {
   max-width: 500px;
   width: 80%;
 }
@@ -87,6 +86,16 @@ img.me {
     align-items: flex-start;
     height: fit-content;
     justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  img {
+    width: 50%;
+  }
+
+  h2,
+  p {
+    margin-bottom: 15px;
   }
 }
 </style>

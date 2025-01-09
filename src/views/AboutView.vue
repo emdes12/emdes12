@@ -3,38 +3,34 @@
     <h1><span>about</span> me</h1>
     <div class="skills-list">
       <div class="skills">
-        <h3>Frontend Engineer</h3>
+        <h3>Web Development - Frontend Engineer</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores, quis
-          at quaerat enim ad, doloribus maxime eos aliquam qui omnis voluptatibus
-          temporibus quod dolor in quasi consequatur praesentium voluptate.
+          Custome webistes built with modern technologies like HTML, CSS, JavaScript, and
+          frameworks like Vue.js
         </p>
       </div>
 
       <div class="skills">
         <h3>Graphics Designer</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores, quis
-          at quaerat enim ad, doloribus maxime eos aliquam qui omnis voluptatibus
-          temporibus quod dolor in quasi consequatur praesentium voluptate.
+          High-quality logos, branding materials and visuals to make your business stand
+          out.
         </p>
       </div>
 
       <div class="skills">
         <h3>Digital Marketing</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores, quis
-          at quaerat enim ad, doloribus maxime eos aliquam qui omnis voluptatibus
-          temporibus quod dolor in quasi consequatur praesentium voluptate.
+          Social Media Management, content creation, and targeted advertising to grow your
+          online presence.
         </p>
       </div>
 
       <div class="skills">
-        <h3>Funnel Designer & Builder</h3>
+        <h3>Funnel Designer & Copywriting</h3>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, dolores, quis
-          at quaerat enim ad, doloribus maxime eos aliquam qui omnis voluptatibus
-          temporibus quod dolor in quasi consequatur praesentium voluptate.
+          Engaging content tailored to your audience's needs. High-converting landing page
+          that convert.
         </p>
       </div>
     </div>
@@ -230,6 +226,18 @@ h4 {
   place-items: center;
 }
 
+@media (max-width: 850px) {
+  .level-circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .im-circle {
+    width: 135px;
+    height: 135px;
+  }
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -272,7 +280,7 @@ h3 {
   border-bottom: 1px solid var(--vt-grey);
 }
 
-im-circle img {
+.im-circle img {
   width: 75%;
 }
 

@@ -111,7 +111,7 @@ h1 {
 .herodiv {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
   flex: 1 1 300px;
   background-color: var(--vt-grey-2);
   padding: 20px;
@@ -138,6 +138,9 @@ img {
   gap: 30px;
 }
 
-@media (min-width: 850px) {
+@media (max-width: 850px) {
+  .herodiv {
+    gap: 10px;
+  }
 }
 </style>

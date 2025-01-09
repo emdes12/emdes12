@@ -41,6 +41,7 @@ button {
   border-radius: 25px;
   overflow: hidden;
   cursor: pointer;
+  height: 48.75px;
 }
 
 .btnimg {
@@ -80,5 +81,11 @@ button:hover {
 
 button:hover span {
   left: 0;
+}
+
+@media (max-width: 850px) {
+  button {
+    font-size: 1rem;
+  }
 }
 </style>
