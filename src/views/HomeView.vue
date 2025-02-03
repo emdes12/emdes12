@@ -1,6 +1,46 @@
 <script setup>
+import { ref, onMounted } from "vue";
 import Button from "../components/Button.vue";
 import Arrow from "../assets/icons/arrow_icon.svg";
+
+const headings = ref([
+  "Front end Developer",
+  "Graphics Designer",
+  "Digital Marketing",
+  "Video Editing",
+]);
+
+const currentHeadingIndex = ref(0);
+const currentText = ref("");
+let charIndex = 0;
+let isDeleting = false;
+let typingSpeed = 100; // Adjust speed if needed
+
+const typeEffect = () => {
+  const currentHeading = headings.value[currentHeadingIndex.value];
+
+  if (!isDeleting) {
+    // Typing effect
+    currentText.value = currentHeading.substring(0, charIndex++);
+    if (charIndex > currentHeading.length) {
+      isDeleting = true;
+      setTimeout(typeEffect, 1000); // Pause before deleting
+      return;
+    }
+  } else {
+    // Deleting effect
+    currentText.value = currentHeading.substring(0, charIndex--);
+    if (charIndex < 0) {
+      isDeleting = false;
+      currentHeadingIndex.value = (currentHeadingIndex.value + 1) % headings.value.length;
+    }
+  }
+  setTimeout(typeEffect, isDeleting ? 50 : typingSpeed);
+};
+
+onMounted(() => {
+  typeEffect();
+});
 </script>
 
 <template>
@@ -8,7 +48,7 @@ import Arrow from "../assets/icons/arrow_icon.svg";
   <main>
     <div class="herodiv">
       <h1>I'm <span>Alawiye Muritala</span></h1>
-      <h2>Front end Developer</h2>
+      <h2 class="typing">{{ currentText }}</h2>
       <p>
         I'm passionate about crafting innovative web solutions and driving results for
         businesses.
@@ -20,9 +60,23 @@ import Arrow from "../assets/icons/arrow_icon.svg";
 </template>
 
 <style scoped>
+.typing {
+  border-right: 2px solid white;
+  padding-right: 5px;
+  animation: blink 0.7s infinite;
+  width: fit-content;
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
 template {
   padding: 30px;
 }
+
 .right-bg {
   position: absolute;
   height: 100%;
