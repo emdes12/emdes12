@@ -70,11 +70,12 @@ main {
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   gap: 30px;
+  margin-top: 30px;
 }
 
 img {
   max-width: 500px;
-  width: 80%;
+  /* width: 80%; */
 }
 
 @media (max-width: 980px) {

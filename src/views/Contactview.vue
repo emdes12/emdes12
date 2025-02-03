@@ -5,6 +5,37 @@ import GithubIcon from "../assets/icons/github.svg";
 import LinkedinIcon from "../assets/icons/linkedin.svg";
 import Button from "../components/Button.vue";
 import SendIcon from "../assets/icons/send.svg";
+import { ref } from "vue";
+import emailjs from "emailjs-com";
+
+const messageSenderName = ref("");
+const messageSenderEmail = ref("");
+const messageContent = ref("");
+
+const messageData = ref({
+  name: "",
+  email_add: "",
+  message: "",
+});
+
+const formCOntroler = () => {
+  // console.log(messageSenderName.value, messageSenderEmail.value, messageContent.value);
+  console.log(messageData);
+  const serviceID = "service_huxuawf"; // Replace with your EmailJS Service ID
+  const templateID = "template_emdrnzf"; // Replace with your EmailJS Template ID
+  const userID = "fe6kZOI9B-mOF96Gs"; // Replace with your EmailJS User ID
+
+  emailjs.send(serviceID, templateID, messageData, userID).then(
+    (response) => {
+      console.log("Email sent successfully!");
+      // messageData = { name: "", email: "", message: "" }; // Reset form
+    },
+    (error) => {
+      // this.errorMessage = "Failed to send email. Please try again.";
+      console.error(error);
+    }
+  );
+};
 </script>
 <template>
   <main>
@@ -43,10 +74,20 @@ import SendIcon from "../assets/icons/send.svg";
         </div>
       </div>
 
-      <form action="/about">
-        <input type="text" name="full-name" id="full-name" placeholder="Full Name" />
-        <input type="email" name="email-address" id="email-address" placeholder="Email" />
-        <textarea name="message" id="message">Your message</textarea>
+      <form @submit.prevent="formCOntroler">
+        <input
+          type="text"
+          name="full-name"
+          v-model="messageData.name"
+          placeholder="Full Name"
+        />
+        <input
+          type="email"
+          name="email-address"
+          v-model="messageData.email_add"
+          placeholder="Email"
+        />
+        <textarea name="message" v-model="messageData.message">Your message</textarea>
         <button type="submit">
           Send Message
           <div class="btnimg">
