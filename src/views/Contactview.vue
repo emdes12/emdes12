@@ -25,10 +25,11 @@ const formCOntroler = () => {
   const templateID = "template_emdrnzf"; // Replace with your EmailJS Template ID
   const userID = "fe6kZOI9B-mOF96Gs"; // Replace with your EmailJS User ID
 
-  emailjs.send(serviceID, templateID, messageData, userID).then(
+  emailjs.send(serviceID, templateID, messageData.value, userID).then(
     (response) => {
-      console.log("Email sent successfully!");
-      // messageData = { name: "", email: "", message: "" }; // Reset form
+      alert("Email sent successfully!");
+      // Reset the form after sending
+      messageData.value = { name: "", email_add: "", message: "" };
     },
     (error) => {
       // this.errorMessage = "Failed to send email. Please try again.";

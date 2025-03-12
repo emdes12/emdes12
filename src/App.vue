@@ -64,6 +64,10 @@ const showMenuBtn = () => {
   height: 100%;
 }
 
+#container {
+  position: relative;
+}
+
 header {
   display: flex;
   padding: 20px 0;
@@ -71,6 +75,8 @@ header {
   justify-content: space-between;
   position: fixed;
   z-index: 1000;
+  top: 0;
+  left: 0;
 }
 
 header.desktop {
