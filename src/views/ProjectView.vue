@@ -15,7 +15,7 @@ const projectData = data.data;
             v-for="(website, index) in projectData.website"
             :key="index"
           >
-            <img :src="website.imageURL" alt="{{ website.name }} Image" />
+            <img :src="website.imageURL" :alt="website.name + ` image`" />
             <h3>{{ website.name }}</h3>
             <p>{{ website.desc }}</p>
             <p>
@@ -35,7 +35,7 @@ const projectData = data.data;
         <h2>Logos</h2>
         <ul class="cont">
           <li class="herodiv" v-for="(logo, index) in projectData.logo" :key="index">
-            <img :src="logo.imageURL" alt="{{ logo.name }} Logo" />
+            <img :src="logo.imageURL" :alt="logo.name +` Logo`" />
             <h3>{{ logo.name }}</h3>
             <p>{{ logo.desc }}</p>
             <p>
@@ -52,7 +52,7 @@ const projectData = data.data;
         <h2>Flyers</h2>
         <ul class="cont">
           <li class="herodiv" v-for="(flyer, index) in projectData.flyer" :key="index">
-            <img :src="flyer.imageURL" alt="{{ flyer.name }} Flyer" />
+            <img :src="flyer.imageURL" :alt="flyer.name +` flyer`" />
             <h3>{{ flyer.name }}</h3>
             <p>{{ flyer.desc }}</p>
             <p>
