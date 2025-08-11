@@ -1,5 +1,5 @@
 -<h1 align="center">Hi 👋, I'm Alawiye Muritala</h1>
-<h3 align="center">A passionate frontend developer from Nigeria, available for entry position/junior front-end jobs, in case you see any please refer me. 👍</h3>
+<h3 align="center">A passionate Fullstack developer, available for entry position in front-end/Back-end/PEVN/PERN jobs, in case you see any please refer me. 👍</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=emdes12&label=Profile%20views&color=0e75b6&style=flat" alt="emdes12" /> </p>
 
@@ -7,15 +7,15 @@
 
 <p align="left"> <a href="https://twitter.com/official_emdes" target="blank"><img src="https://img.shields.io/twitter/follow/official_emdes?logo=twitter&style=for-the-badge" alt="official_emdes" /></a> </p>
 
-- 🔭 I’m currently working on **My portfolio**
+- 🔭 I’m currently working on **A personal project**
 
-- 🌱 I’m currently learning **Vuex**
+- 🌱 I’m currently learning **Postgresql, advance React**
 
-- 👨‍💻 I'm currently working on [Relate+](https://relateplus.netlify.app) a CRM software for Shinovate Solutions 
+- 👨‍💻 I'm currently working on [Relate+](https://relateplus.netlify.app) a CRM software for ShineInv Solutions 
 
-- 👨‍💻 All of my projects are available at [https://github.com/emdes12](https://github.com/emdes12)
+- 👨‍💻 All of my projects are available at [GitHub - Emdes12](https://github.com/emdes12)
 
-- 💬 Ask me about **Vue, html, css and js**
+- 💬 Ask me about **Vue, html, css and js, node, express, reactjs, postgresql**
 
 - 📫 How to reach me **naijabayz@gmail.com**
 
