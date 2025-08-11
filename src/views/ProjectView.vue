@@ -6,7 +6,7 @@ const projectData = {
              {
                 name: "Relate+ CRM",
                 desc : 'A mini Customer Relationship Management Web App',
-                imageURL : "src/assets/images/web(1).png",
+                imageURL : "src/assets/images/rcrmweb.png",
                 stack : "VUE.js | Firebase",
                 link : "http://relateplus.netlify.app",
                 githubLink : "http://github.com/emdes12/relateplus.git"
@@ -14,7 +14,7 @@ const projectData = {
             {
                 name : "Ribdex Property",
                 desc : 'A website build for Ribdex Global Concept Ltd for listing their available property',
-                imageURL : "src/assets/images/web(4).png",
+                imageURL : "src/assets/images/rpweb.png",
                 stack : "HTML | Tailwind CSS | JS | Firebase",
                 link : "http://new-ribdex-property.netlify.app",
                 githubLink : "http://github.com/emdes12/ribdex-property.git"
@@ -22,7 +22,7 @@ const projectData = {
             {
                 name : "PayEvi",
                 desc : 'A Online Invoice Generator Web App',
-                imageURL : "src/assets/images/web(3).png",
+                imageURL : "src/assets/images/peweb.png",
                 stack : "VUE.js | Firebase",
                 link : "http://payevi.vercel.app",
                 githubLink : "http://github.com/emdes12/payevi.git"
