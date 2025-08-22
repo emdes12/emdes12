@@ -1,12 +1,23 @@
 <script setup>
 import data from "./data.js";
+import Web1 from "@/assets/images/rcrmweb.png"
+import Web2 from "@/assets/images/rpweb.png"
+import Web3 from "@/assets/images/peweb.png"
+import Web4 from "@/assets/images/web(4).png"
+import Logo1 from "@/assets/images/logo(1).jpg"
+import Logo2 from "@/assets/images/logo(4).jpg"
+import Logo3 from "@/assets/images/logo(3).jpg"
+import Logo4 from "@/assets/images/logo(2).jpg"
+import Flyer1 from "@/assets/images/flyer(1).png"
+import Flyer2 from "@/assets/images/flyer(2).jpg"
+import Flyer3 from "@/assets/images/flyer(3).jpg"
 
 const projectData = {
         website : [
              {
                 name: "Relate+ CRM",
                 desc : 'A mini Customer Relationship Management Web App',
-                imageURL : "src/assets/images/rcrmweb.png",
+                imageURL : Web1,
                 stack : "VUE.js | Firebase",
                 link : "http://relateplus.netlify.app",
                 githubLink : "http://github.com/emdes12/relateplus.git"
@@ -14,7 +25,7 @@ const projectData = {
             {
                 name : "Ribdex Property",
                 desc : 'A website build for Ribdex Global Concept Ltd for listing their available property',
-                imageURL : "src/assets/images/rpweb.png",
+                imageURL : Web2,
                 stack : "HTML | Tailwind CSS | JS | Firebase",
                 link : "http://new-ribdex-property.netlify.app",
                 githubLink : "http://github.com/emdes12/ribdex-property.git"
@@ -22,7 +33,7 @@ const projectData = {
             {
                 name : "PayEvi",
                 desc : 'A Online Invoice Generator Web App',
-                imageURL : "src/assets/images/peweb.png",
+                imageURL : Web3,
                 stack : "VUE.js | Firebase",
                 link : "http://payevi.vercel.app",
                 githubLink : "http://github.com/emdes12/payevi.git"
@@ -30,7 +41,7 @@ const projectData = {
             {
                 name : "Ribdex Global Concept Website",
                 desc : 'Ribdex Global Concept Limited Website',
-                imageURL : "src/assets/images/web(2).png",
+                imageURL : Web4,
                 stack : "HTML | Tailwind CSS | JS",
                 link : "http://ribdexglobal.netlify.app",
                 githubLink : "http://github.com/emdes12/Ribdex-Real-Repo.git"
@@ -40,28 +51,28 @@ const projectData = {
             {
                 name : "Relate+ CRM",
                 desc : 'A mini Customer Relationship Management Web App',
-                imageURL : "src/assets/images/logo(1).jpg",
+                imageURL : Logo1,
                 stack : "CorelDraw",
                 link : "http://alawiye.netlify.appsrc/assets/images/logo(1).jpg",
             },
             {
                 name : "Havan FX",
                 desc : 'A Forex Trading Company into Investment and Training',
-                imageURL : "src/assets/images/logo(4).jpg",
+                imageURL : Logo2,
                 stack : "CorelDraw",
                 link : "http://alawiye.netlify.appsrc/assets/images/logo(4).jpg",
             },
             {
                 name : "Osun Aseyori",
                 desc : 'A Tradomedical Center',
-                imageURL : "src/assets/images/logo(3).jpg",
+                imageURL : Logo3,
                 stack : "CorelDraw",
                 link : "http://alawiye.netlify.appsrc/assets/images/logo(3).jpg",
             },
             {
                 name : "Luke Ink Notary",
                 desc : 'a mini Customer Relationship Management Web App',
-                imageURL : "src/assets/images/logo(2).jpg",
+                imageURL : Logo4,
                 stack : "CorelDraw",
                 link : "http://alawiye.netlify.appsrc/assets/images/logo(2).jpg",
             },
@@ -70,21 +81,21 @@ const projectData = {
             {
                 name : "Al-Itqon Online Academy",
                 desc : 'An online institue for learning Tajweed and Memorizing the Quran',
-                imageURL : "src/assets/images/flyer(1).png",
+                imageURL : Flyer1,
                 stack : "CorelDraw",
                 link : "src/assets/images/flyer(1).png",
             },
             {
                 name : "Siaat Cakes Training",
                 desc : 'Ballon Class Training organized by Siaat Cakes and Party Planning',
-                imageURL : "src/assets/images/flyer(2).jpg",
+                imageURL : Flyer2,
                 stack : "CorelDraw",
                 link : "src/assets/images/flyer(2).jpg",
             },
             {
                 name : "Ribdex Property",
                 desc : 'A property showcasing flyer',
-                imageURL : "src/assets/images/flyer(3).jpg",
+                imageURL : Flyer3,
                 stack : "CorelDraw",
                 link : "src/assets/images/flyer(3).jpg",
             },
